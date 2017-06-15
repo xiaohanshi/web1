@@ -1,0 +1,54 @@
+<DOCTORY! html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<style>
+		.one{
+			width:706px;
+			height:60px;
+			border:1px solid black;
+		
+		}
+		.two{
+			width:200px;
+			height:150px;
+			border:1px solid #000;
+			float: left;
+		}
+		.three{
+			width:300px;
+			height:150px;
+			border:1px solid #000;
+			float: left;
+		}
+		.four{
+			width:706px;
+			height:80px;
+			border:1px solid #000;
+
+			
+		}
+		.five{
+			width:200px;
+			height:150px;
+			border:1px solid #000;
+			float: left;
+		}
+		.six{
+			width:706px;
+			height: 150px;
+			border:1px solid #000;
+			
+}
+	</style>
+</head>
+<body>
+	<div class="one"/></div>
+	<div class="six">	
+		<div class="two"></div>
+		<div class="three"></div>
+		<div class="five"></div>
+	</div>
+	<div class="four"></div>
+</body>
+</html>
