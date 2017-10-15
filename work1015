@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+	var str="";
+function showData(which) {
+	str += which.value;
+	document.getElementById("result").innerHTML = str; 
+}
+function calculate() {
+	document.getElementById("result").innerHTML='';
+	var resultNum=eval(str);
+	resultNum +='';
+	document.getElementById("result").innerHTML=resultNum;
+	str=resultNum;
+}
+function clearData() {
+	str="";
+	document.getElementById("result").innerHTML=0;
+}
+	</script>
+</head>
+<body>
+	<table border="1">
+		<tr>
+		<td colspan="3" id="result" style="text-align:right">0</td>
+		<td><button value="C" onclick="clearData()">C</button></td>
+		</tr
+		<tr>
+		<td><button type="button" value="1" onclick="showData(this);">1</button></td>
+		<td><button  type="button" value="2" onclick="showData(this);">2</button></td>
+		<td><button type="button" value="3" onclick="showData(this);">3</button></td>
+		<td><button type="button" value="+" onclick="showData(this);">+</button></td>
+		</tr>
+		<tr>
+		<td><button type="button" value="4" onclick="showData(this);">4</button></td>
+		<td><button type="button" value="5" onclick="showData(this);">5</button></td>
+		<td><button type="button" value="6" onclick="showData(this);">6</button></td>
+		<td><button type="button" value="-" onclick="showData(this);">-</button></td>
+		</tr>
+		<tr>
+		<td><button type="button" value="7" onclick="showData(this);">7</button></td>
+		<td><button type="button" value="8" onclick="showData(this);">8</button></td>
+		<td><button type="button" value="9" onclick="showData(this);">9</button></td>
+		<td><button type="button" value="*" onclick="showData(this);">*</button></td>
+		</tr>
+		<tr>
+		<td><button type="button" value="0" onclick="showData(this);">0</button></td>
+		<td><button type="button" value="." onclick="showData(this);">.</button></td>
+		<td><button type="button" value="=" onclick="calculate()">=</button></td>
+		<td><button type="button" value="/"onclick="showData(this);">/</button></td>
+		</tr>
+	</table>
+</body>
+</html>
