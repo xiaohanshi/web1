@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>剑侠情缘叁</title>
+	<meta charset="utf-8">
+	<style>
+		.head{
+		background-image:url(photo/head.png);
+		background-repeat:no-repeat;
+		margin-left: 90px;
+		height: 100px;
+		}
+		.box{
+
+		}
+		* {
+		font-size:15px;
+		margin:0px;
+		padding:0px;
+		}
+		#nav{
+			font-size: 12px;
+
+		margin-left: 150px;
+		list-style:none;
+		line-height:27px;
+		}
+		#nav a:link,#nav a:visited{
+		display:block;
+		width:80px;
+		color: #666;
+		text-align:center;
+		text-decoration:none;
+
+		}
+		#nav a:hover{
+		color: #FFF;
+		text-decoration: underline;
+		font-weight: bold;
+		background:#999;
+		}
+		#nav ul{list-style: none;}
+		#nav li{
+		float:left;
+		width: 80px;
+		}
+		#nav li ul li a:hover{
+		background:#C00;
+		}
+
+		#nav li ul{
+		display:none;
+		}
+		#nav li.subMenuShow ul{
+		display:block;
+		}
+		.im{
+			margin-left:100px; 
+			margin-top: 50px;
+			background-repeat: no-repeat;
+			height: 233px;
+			width: 400px;
+		}
+		.oim{
+			margin-top: -233px;
+			margin-left: 500px;
+			background-repeat: no-repeat;
+			height: 233px;
+			width: 400px;
+		}
+		.ooim{
+			margin-top: -233px;
+			margin-left: 900px;
+			background-repeat: no-repeat;
+			height: 233px;
+			width: 400px;
+		}
+		.oooim{
+			margin-left: 500px;
+			margin-top: 100px;
+			background-repeat: no-repeat;
+			height: 233px;
+			width: 400px;
+		}
+		.shixiu{
+			margin-top:100px;
+			height: 200px;
+		}
+		.menxiu{
+			margin-top:50px;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			fun1();
+			var img = document.getElementById("img");
+            	img.ondblclick = function(){
+                    if(this.width == this.attributes['default_width'].value && this.height == this.attributes['default_height'].value){
+                        this.width *=1.2;
+                        this.height *=1.2;
+                    }else{
+                        this.width = this.attributes['default_width'].value ;
+                        this.height = this.attributes['default_height'].value;
+                    }
+                }
+		}
+		var liNodes = document.getElementsByTagName("li");
+		function fun1(){
+			for (var i=0; i<liNodes.length; i++)
+			{
+				liNodes[i].onmouseover = function(){
+					this.className = "subMenuShow";
+				}
+				liNodes[i].onmouseout = function(){
+					this.className = "";
+				}	
+			}
+		}
+
+	</script>
+	<script type="text/javascript">
+		function changeImg() {
+    	   var obj = document.getElementById("bbb");    
+    	   if (obj.getAttribute("src") =="photo/jie1.jpg") 
+    	   {
+        	   obj.setAttribute("src","photo/jie2.jpg");      
+    	   } 
+    	   else{  
+        	   obj.setAttribute("src","photo/jie1.jpg");  
+    	   }    
+        }
+	</script>
+</head>
+<body>
+	<div class="head" ></div>
+	<ul id="nav">
+		<li><a  href="#">霸刀</a>
+			<ul>
+				<li><a href="#">门派背景</a></li>
+				<li><a href="#">门派技能</a></li>
+			</ul>
+		</li>
+		<li><a href="#">长歌</a>
+			<ul>
+				<li><a href="#">门派背景</a></li>
+				<li><a href="#">门派技能</a></li>
+			</ul>
+		</li>
+		<li><a href="#">七秀</a>
+			<ul>
+				<li><a href="#">门派背景</a></li>
+				<li><a href="#">门派技能</a></li>
+			</ul>
+		</li>
+		<li><a href="#">万花</a>
+			<ul>
+				<li><a href="#">门派背景</a></li>
+				<li><a href="#">门派技能</a></li>
+			</ul>
+		</li>
+		<li><a href="#">藏剑</a>
+			<ul>
+				<li><a href="#">门派背景</a></li>
+				<li><a href="#">门派技能</a></li>
+			</ul>
+		</li>
+		<li><a href="#">五毒</a>
+			<ul>
+				<li><a href="#">门派背景</a></li>
+				<li><a href="#">门派技能</a></li>
+			</ul>
+		</li>
+		<li><a href="#">苍云</a>
+			<ul>
+				<li><a href="#">门派背景</a></li>
+				<li><a href="#">门派技能</a></li>
+			</ul>
+		</li>
+		<li><a href="#">天策</a>
+			<ul>
+				<li><a href="#">门派背景</a></li>
+				<li><a href="#">门派技能</a></li>
+			</ul>
+		</li>
+		<li><a href="#">纯阳</a>
+			<ul>
+				<li><a href="#">门派背景</a></li>
+				<li><a href="#">门派技能</a></li>
+			</ul>
+		</li>
+		<li><a href="#">丐帮</a>
+			<ul>
+				<li><a href="#">门派背景</a></li>
+				<li><a href="#">门派技能</a></li>
+			</ul>
+		</li>
+		<li><a href="#">唐门</a>
+			<ul>
+				<li><a href="#">门派背景</a></li>
+				<li><a href="#">门派技能</a></li>
+			</ul>
+		</li>
+		<li><a href="#">少林</a>
+			<ul>
+				<li><a href="#">门派背景</a></li>
+				<li><a href="#">门派技能</a></li>
+			</ul>
+		</li>
+		<li><a href="#">明教</a>
+			<ul>
+				<li><a href="#">门派背景</a></li>
+				<li><a href="#">门派技能</a></li>
+			</ul>
+		</li>
+	</ul>
+	<img src="">
+	<div class="menxiu"><img src="photo/menxiu.png"></div>
+	<div class="im"><img src="photo/ba.jpg"width="350" height="195" default_width=350 default_height=195 id="img"></div>
+	<div class="oim"><img src="photo/chang.jpg"width="350" height="195" default_width=350 default_height=195></div>
+	<div class="ooim"><img src="photo/gai.jpg"width="350" height="195" default_width=350 default_height=195></div>
+	<div class="im"><img src="photo/qi.jpg"width="350" height="195" default_width=350 default_height=195></div>
+	<div class="oim"><img src="photo/wu.jpg"width="350" height="195" default_width=350 default_height=195></div>
+	<div class="ooim"><img src="photo/wan.jpg"width="350" height="195" default_width=350 default_height=195></div>
+	<div class="im"><img src="photo/tian.jpg"width="350" height="195" default_width=350 default_height=195/></div>
+	<div class="oim"><img src="photo/cang.jpg"width="350" height="195" default_width=350 default_height=195></div>
+	<div class="ooim"><img src="photo/jian.jpg"width="350" height="195" default_width=350 default_height=195></div>
+	<div class="im"><img src="photo/chun.jpg"width="350" height="195" default_width=350 default_height=195></div>
+	<div class="oim"><img src="photo/ming.jpg"width="350" height="195" default_width=350 default_height=195></div>
+	<div class="ooim"><img src="photo/tang.jpg"width="350" height="195" default_width=350 default_height=195></div>
+	<div class="oooim"><img src="photo/shao.jpg"width="350" height="195" default_width=350 default_height=195></div>
+	<div class="shixiu"><img src ="photo/shixiu.png"></div>
+	<img border="0" alt="XXX" src="photo/jie1.jpg" id="bbb"/>
+ 	<input type="button" value="点击切换" onclick="changeImg();"/>
+</body>
+</html>
